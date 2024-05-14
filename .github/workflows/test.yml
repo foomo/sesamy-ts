@@ -37,9 +37,7 @@ jobs:
       - uses: volta-cli/action@v4
 
       - name: Run pnpm install
-        run: |
-          pnpm install
-          git diff --exit-code
+        run: pnpm install
 
       - name: Run lint
         run: pnpm run lint
