@@ -1,0 +1,26 @@
+{
+	"private": true,
+	"name": "@foomo/sesamy-ts",
+	"version": "0.0.0",
+	"license": "MIT",
+	"engines": {
+		"node": "^20"
+	},
+	"scripts": {
+		"build": "turbo run build --cache-dir=.turbo",
+		"dev": "turbo run dev",
+		"lint": "biome check ./",
+		"lint:fix": "biome check --apply ./",
+		"type-check": "turbo type-check",
+		"clean": "turbo run clean"
+	},
+	"devDependencies": {
+		"@repo/config-typescript": "workspace:*",
+		"biome": "latest",
+		"turbo": "latest"
+	},
+	"volta": {
+		"node": "20.11.1",
+		"pnpm": "9.1.1"
+	}
+}

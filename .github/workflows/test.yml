@@ -1,0 +1,41 @@
+name: Test Branch
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      VOLTA_FEATURE_PNPM: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup turbo cache
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-turbo-
+
+      - uses: volta-cli/action@v4
+
+      - uses: Run pnpm install
+        run: |
+          pnpm install
+          git diff --exit-code
+
+      - uses: Run lint
+        run: pnpm run lint
+
+      - uses: Run build
+        run: pnpm run build
+

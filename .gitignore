@@ -1,0 +1,27 @@
+.*
+*.log
+*.out
+/tmp/
+
+### Editorconfig ###
+!.editorconfig
+
+### GitHub ###
+!.github/
+
+### GIT ###
+!.gitignore
+!.gitkeep
+
+### VSCode ###
+!.vscode/
+.vscode/*
+!.vscode/extensions.json
+
+### NPM ###
+**/out/
+**/dist/
+**/build/
+**/node_modules/
+**/*.tsbuildinfo
+package-log.json
