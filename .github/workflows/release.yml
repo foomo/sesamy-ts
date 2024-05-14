@@ -1,11 +1,11 @@
 name: Release Tag
 
-#on:
-#  push:
-#    tags:
-#      - v*.*.*
-#  workflow_dispatch:
-#
+on:
+  push:
+    tags:
+      - v*.*.*
+  workflow_dispatch:
+
 #permissions:
 #  contents: write
 #
