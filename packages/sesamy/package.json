@@ -7,8 +7,9 @@
 		"node": ">=20"
 	},
 	"scripts": {
-		"build": "pnpm clean && pnpm tsx build.ts",
-		"clean": "rimraf dist",
+		"build": "pnpm run build:client && pnpm run build:server",
+		"build:client": "tsup --config tsup.client.ts",
+		"build:server": "tsup --config tsup.server.ts",
 		"type-check": "tsc --noEmit"
 	},
 	"files": ["dist"],
@@ -55,10 +56,9 @@
 		"@types/react-dom": "18.2.18",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
+		"resolve-glob": "latest",
 		"typescript": "^5",
-		"tsx": "latest",
-		"rimraf": "latest",
-		"esbuild": "latest"
+		"tsup": "latest"
 	},
 	"peerDependencies": {
 		"react": "18.2.0",
