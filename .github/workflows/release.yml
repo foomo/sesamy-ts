@@ -6,16 +6,16 @@ on:
       - v*.*.*
   workflow_dispatch:
 
-#permissions:
-#  contents: write
-#
-#jobs:
-#  release:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v4
-#        with:
-#          fetch-depth: 0
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 #
 #      - run: git fetch --force --tags
 #
