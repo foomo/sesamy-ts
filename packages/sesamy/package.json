@@ -1,5 +1,5 @@
 {
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"name": "@foomo/sesamy",
 	"description": "Server Side Tagging System (Sesamy)",
 	"homepage": "https://www.foomo.org",
@@ -19,7 +19,10 @@
 		"build:server": "tsup --config tsup.server.ts",
 		"type-check": "tsc --noEmit"
 	},
-	"files": ["dist", "LICENSE"],
+	"files": [
+		"dist",
+		"LICENSE"
+	],
 	"types": "./dist/server/index.client.d.ts",
 	"exports": {
 		".": {
