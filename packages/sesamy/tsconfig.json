@@ -1,9 +1,12 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": "@repo/config-typescript/react-jsx-library.json",
+	"extends": "@repo/typescript-config/library-jsx.json",
 	"compilerOptions": {
-		"outDir": "./dist"
+		"outDir": "./dist",
+		"lib": ["DOM", "ESNext"],
+		"paths": {
+			"@/*": ["./src/*"]
+		}
 	},
-	"include": ["."],
-	"exclude": ["dist", "build", "node_modules"]
+	"exclude": ["node_modules", "dist"]
 }

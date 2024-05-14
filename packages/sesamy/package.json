@@ -7,7 +7,8 @@
 		"node": ">=20"
 	},
 	"scripts": {
-		"build": "tsc",
+		"build": "pnpm clean && pnpm tsx build.ts",
+		"clean": "rimraf dist",
 		"type-check": "tsc --noEmit"
 	},
 	"files": ["dist"],
@@ -45,20 +46,22 @@
 			"default": "./dist/index.node.js"
 		}
 	},
-	"peerDependencies": {
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
-	},
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"@repo/config-typescript": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
 		"@types/gtag.js": "0.0.19",
+		"@types/node": "^20",
 		"@types/react": "18.2.48",
 		"@types/react-dom": "18.2.18",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"typescript": "5.3.3",
-		"tsup": "8.0.1"
+		"typescript": "^5",
+		"tsx": "latest",
+		"rimraf": "latest",
+		"esbuild": "latest"
+	},
+	"peerDependencies": {
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
 	}
 }

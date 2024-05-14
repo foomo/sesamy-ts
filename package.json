@@ -6,6 +6,17 @@
 	"engines": {
 		"node": "^20"
 	},
+	"homepage": "https://github.com/foomo/sesamy-ts#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/foomo/sesamy-ts.git"
+	},
+	"bugs": {
+		"url": "https://github.com/foomo/sesamy-ts/issues"
+	},
+	"publishConfig": {
+		"registry":"https://npm.pkg.github.com/"
+	},
 	"scripts": {
 		"build": "turbo run build --cache-dir=.turbo",
 		"dev": "turbo run dev",
@@ -15,7 +26,7 @@
 		"clean": "turbo run clean"
 	},
 	"devDependencies": {
-		"@repo/config-typescript": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
 		"biome": "latest",
 		"turbo": "latest"
 	},
