@@ -17,9 +17,9 @@ updates:
       day: 'sunday'
       interval: 'weekly'
     groups:
-      gomod-security:
+      npm-security:
         applies-to: security-updates
         patterns: ['*']
-      gomod-update:
+      npm-update:
         applies-to: version-updates
         patterns: ['*']
