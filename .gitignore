@@ -9,6 +9,9 @@
 ### GitHub ###
 !.github/
 
+### Changeset ###
+!.changeset
+
 ### GIT ###
 !.gitignore
 !.gitkeep

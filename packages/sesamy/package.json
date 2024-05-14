@@ -1,10 +1,17 @@
 {
 	"version": "0.1.0",
 	"name": "@foomo/sesamy",
+	"description": "Server Side Tagging System (Sesamy)",
+	"homepage": "https://www.foomo.org",
 	"license": "MIT",
-	"type": "module",
-	"engines": {
-		"node": ">=20"
+	"author": "foomo",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/foomo/sesamy-ts",
+		"directory": "packages/create-turbo"
+	},
+	"bugs": {
+		"url": "https://github.com/foomo/sesamy-ts/issues"
 	},
 	"scripts": {
 		"build": "pnpm run build:client && pnpm run build:server",
@@ -12,7 +19,7 @@
 		"build:server": "tsup --config tsup.server.ts",
 		"type-check": "tsc --noEmit"
 	},
-	"files": ["dist"],
+	"files": ["dist", "LICENSE"],
 	"types": "./dist/server/index.client.d.ts",
 	"exports": {
 		".": {

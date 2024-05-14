@@ -1,25 +1,9 @@
 {
 	"private": true,
-	"name": "@foomo/sesamy-ts",
+	"name": "sesamy-ts",
 	"version": "0.0.0",
-	"license": "MIT",
-	"engines": {
-		"node": "^20"
-	},
-	"homepage": "https://github.com/foomo/sesamy-ts#readme",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/foomo/sesamy-ts.git"
-	},
-	"bugs": {
-		"url": "https://github.com/foomo/sesamy-ts/issues"
-	},
-	"publishConfig": {
-		"registry":"https://npm.pkg.github.com/"
-	},
 	"scripts": {
 		"build": "turbo run build --cache-dir=.turbo",
-		"dev": "turbo run dev",
 		"lint": "biome check ./",
 		"lint:fix": "biome check --apply ./",
 		"type-check": "turbo type-check",
@@ -27,8 +11,12 @@
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
+		"@changesets/cli": "latest",
 		"biome": "latest",
 		"turbo": "latest"
+	},
+	"engines": {
+		"node": "20.x"
 	},
 	"volta": {
 		"node": "20.11.1",
