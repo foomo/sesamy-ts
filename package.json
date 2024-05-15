@@ -3,11 +3,13 @@
 	"name": "sesamy-ts",
 	"version": "0.0.0",
 	"scripts": {
+		"clean": "turbo run clean",
 		"build": "turbo run build --cache-dir=.turbo",
 		"lint": "biome check ./",
 		"lint:fix": "biome check --apply ./",
+		"test": "turbo run test",
 		"type-check": "turbo type-check",
-		"clean": "turbo run clean"
+		"publish-packages": "turbo run build lint test && changeset version && changset publish"
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
