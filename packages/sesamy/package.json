@@ -21,7 +21,8 @@
 	},
 	"files": [
 		"dist",
-		"LICENSE"
+		"LICENSE",
+		"README.md"
 	],
 	"types": "./dist/server/index.client.d.ts",
 	"exports": {
