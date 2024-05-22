@@ -11,10 +11,20 @@ This library offers a wrapper around `gtag` to be used with generated events fro
 
 Make a pull request...
 
+### Pull requests
+
 This repo uses [Changeset](https://github.com/changesets/changesets/blob/main/packages/cli/README.md), so please run this on your PR and follow the instructions:
 
 ```bash
 $ pnpm changeset
+```
+
+### Publishing
+
+In order to publish changes created with `changeset`, run:
+
+```shell
+$ pnpm publish-packages
 ```
 
 ## License
