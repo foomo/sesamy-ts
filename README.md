@@ -7,45 +7,6 @@
 
 This library offers a wrapper around `gtag` to be used with generated events from `foomo/sesamy-cli`.
 
-## Usage
-
-Load `gtm.js` and setup `gtag()`:
-
-```tsx
-import { GTMScript } from '@foomo/sesamy';
-
-export default function RootLayout({ children }: Layout) {
-  return (
-    <html lang="en">
-    <head>
-      <GTMScript id={'GTM-XXXXXXX'} />
-    </head>
-    <body>
-    <main>{children}</main>
-    </body>
-    </html>
-  );
-}
-```
-
-Send event:
-
-```tsx
-import { collect } from '@foomo/sesamy';
-
-export const MyComponent = () => {
-  const handleClick = () => {
-    collect({
-      name: 'my-event',
-      params: {
-        value: 'my-value'
-      }
-    })
-  }
-  return (<button onClick={handleClick}>Click</button>)
-}
-```
-
 ## How to Contribute
 
 Make a pull request...

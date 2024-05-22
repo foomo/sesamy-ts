@@ -2,21 +2,43 @@
 
 >**Se**rver **S**ide T**a**g **M**anagement **S**ystem
 
+
 ## Usage
 
-Send GTag events:
+Load `gtm.js` and setup `window.gtag()`:
 
 ```tsx
-import {collect} from '@foomo/sesamy';
+import { GTMScript } from '@foomo/sesamy';
 
-export const Button = () => {
-  const handleClick = () => collect(
-    {
-      name: 'click',
-      params: {id: 'checkout'}
-    }
-  )
-  return (<button id={'checkout'} onClick={handleClick}>Click me</button>)
+export default function RootLayout({ children }: Layout) {
+  return (
+    <html lang="en">
+    <head>
+      <GTMScript id={'GTM-XXXXXXX'} />
+    </head>
+    <body>
+    <main>{children}</main>
+    </body>
+    </html>
+  );
+}
+```
+
+Send event:
+
+```tsx
+import { collect } from '@foomo/sesamy';
+
+export const MyComponent = () => {
+  const handleClick = () => {
+    collect({
+      name: 'my-event',
+      params: {
+        value: 'my-value'
+      }
+    })
+  }
+  return (<button onClick={handleClick}>Click</button>)
 }
 ```
 
