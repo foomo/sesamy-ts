@@ -9,7 +9,7 @@
 		"lint:fix": "biome check --apply ./",
 		"test": "turbo run test",
 		"type-check": "turbo type-check",
-		"publish-packages": "turbo run build test && changeset version && changset publish"
+		"publish-packages": "turbo run build test && changeset version && changeset publish"
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
