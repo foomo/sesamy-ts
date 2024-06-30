@@ -61,18 +61,18 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
-		"@types/gtag.js": "0.0.19",
+		"@types/gtag.js": "0.0.20",
 		"@types/node": "^20",
-		"@types/react": "18.2.48",
-		"@types/react-dom": "18.2.18",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
+		"@types/react": "18.3.3",
+		"@types/react-dom": "18.3.0",
+		"react": "18.3.1",
+		"react-dom": "18.3.1",
 		"resolve-glob": "latest",
 		"typescript": "^5",
 		"tsup": "latest"
 	},
 	"peerDependencies": {
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
+		"react": "18.3.1",
+		"react-dom": "18.3.1"
 	}
 }
