@@ -1,5 +1,11 @@
 # @foomo/sesamy
 
+## 0.1.4
+
+### Patch Changes
+
+- bump dependencies
+
 ## 0.1.3
 
 ### Patch Changes
