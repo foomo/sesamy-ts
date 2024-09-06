@@ -42,9 +42,12 @@ jobs:
       - name: Run lint
         run: pnpm run lint
 
-      - name: Run test
-        run: pnpm run test
+      - name: Run lint
+        run: pnpm run type-check
 
       - name: Run build
         run: pnpm run build
+
+      - name: Run test
+        run: pnpm run test
 
