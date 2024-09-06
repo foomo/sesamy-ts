@@ -49,8 +49,6 @@ to keep your backend, frontend and Google Tag Manager in sync.
 
 ## How to Contribute
 
-Make a pull request...
-
 This repo uses [Changeset](https://github.com/changesets/changesets/blob/main/packages/cli/README.md), so please run this on your PR and follow the instructions:
 
 ```bash
