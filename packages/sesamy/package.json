@@ -1,5 +1,5 @@
 {
-	"version": "0.1.1",
+	"version": "0.1.3",
 	"name": "@foomo/sesamy",
 	"description": "Server Side Tagging System (Sesamy)",
 	"homepage": "https://www.foomo.org",
@@ -61,18 +61,18 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
-		"@types/gtag.js": "0.0.19",
-		"@types/node": "^20",
-		"@types/react": "18.2.48",
-		"@types/react-dom": "18.2.18",
-		"react": "18.2.0",
+		"@types/gtag.js": "0.0.20",
+		"@types/node": "20.14.8",
+		"@types/react": "18.3.5",
+		"@types/react-dom": "18.3.0",
+		"react": "18.3.1",
 		"react-dom": "18.2.0",
-		"resolve-glob": "latest",
-		"typescript": "^5",
-		"tsup": "latest"
+		"resolve-glob": "1.0.0",
+		"typescript": "5.5.4",
+		"tsup": "8.2.4"
 	},
 	"peerDependencies": {
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
+		"react": "18.x",
+		"react-dom": "18.x"
 	}
 }
