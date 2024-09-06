@@ -1,5 +1,12 @@
 # @foomo/sesamy
 
+## 0.1.5
+
+### Patch Changes
+
+- 640a77c: Update docs
+- ccead0f: Update README
+
 ## 0.1.4
 
 ### Patch Changes
