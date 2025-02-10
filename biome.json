@@ -39,9 +39,6 @@
 		}
 	},
 	"files": {
-		"ignore": [
-			".idea/**",
-			".vscode/**"
-		]
+		"ignore": [".idea/**", ".vscode/**"]
 	}
 }

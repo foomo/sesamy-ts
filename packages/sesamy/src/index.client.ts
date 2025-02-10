@@ -1,20 +1,25 @@
 import type { Event } from './types';
 
 export * from './components';
-export type * from "./types";
+export type * from './types';
 
 // https://developers.google.com/tag-platform/gtagjs/reference
 export const collect = (event: Event) => {
 	gtag('event', event.name, event.params);
 };
 
-export const measure = (clientId: string, event: Event, endpoint: string = '/mp/collect') => {
+export const measure = (
+	clientId: string,
+	event: Event,
+	endpoint = '/mp/collect',
+) => {
 	const params = new URLSearchParams(window.location.search);
 	const headers = new Headers();
-	headers.append("Content-Type", 'application/json');
-	headers.append("X-Page-Title", document.title);
-	headers.append("X-Page-Referrer", document.referrer);
-	headers.append("X-Page-Id", window['dataLayer']?.[0]?.['gtm.start']);
+	headers.append('Content-Type', 'application/json');
+	headers.append('X-Page-Title', document.title);
+	headers.append('X-Page-Referrer', document.referrer);
+	// biome-ignore lint/complexity/useLiteralKeys: global
+	headers.append('X-Page-Id', window['dataLayer']?.[0]?.['gtm.start']);
 	return fetch(endpoint, {
 		method: 'POST',
 		headers: headers,
@@ -34,10 +39,10 @@ export const measure = (clientId: string, event: Event, endpoint: string = '/mp/
 						// Additional engagement time since last event, in microseconds.
 						// session_id: ''
 						engagement_time_msec: 1,
-						debug_mode: params.has("gtm_debug"),
+						debug_mode: params.has('gtm_debug'),
 					},
 				},
 			],
 		}),
 	});
-}
+};

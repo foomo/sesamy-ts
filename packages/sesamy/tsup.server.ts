@@ -1,15 +1,15 @@
-import { defineConfig, type Options} from "tsup";
+import { type Options, defineConfig } from 'tsup';
 
 export default defineConfig({
 	dts: true,
 	clean: true,
-	platform: "node",
-	format: ["cjs"],
+	platform: 'node',
+	format: ['cjs'],
 	splitting: true,
-	entry: ["src/**/!(*.client|*.test|*.stories|*.spec).{ts,tsx}"],
-	outDir: "dist/server",
+	entry: ['src/**/!(*.client|*.test|*.stories|*.spec).{ts,tsx}'],
+	outDir: 'dist/server',
 	bundle: true,
 	minify: true,
 	sourcemap: true,
-	external: ["react", "react-dom"],
+	external: ['react', 'react-dom'],
 });
