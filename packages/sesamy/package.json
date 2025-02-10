@@ -19,11 +19,7 @@
 		"build:server": "tsup --config tsup.server.ts",
 		"type-check": "tsc --noEmit"
 	},
-	"files": [
-		"dist",
-		"LICENSE",
-		"README.md"
-	],
+	"files": ["dist"],
 	"types": "./dist/server/index.client.d.ts",
 	"exports": {
 		".": {
@@ -62,14 +58,14 @@
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
 		"@types/gtag.js": "0.0.20",
-		"@types/node": "20.14.8",
-		"@types/react": "18.3.5",
-		"@types/react-dom": "18.3.0",
+		"@types/node": "22.13.1",
+		"@types/react": "18.3.18",
+		"@types/react-dom": "18.3.5",
 		"react": "18.3.1",
-		"react-dom": "18.2.0",
+		"react-dom": "18.3.1",
 		"resolve-glob": "1.0.0",
-		"typescript": "5.5.4",
-		"tsup": "8.2.4"
+		"typescript": "5.7.3",
+		"tsup": "8.3.6"
 	},
 	"peerDependencies": {
 		"react": "18.x",
