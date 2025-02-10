@@ -1,1 +1,1 @@
-export * from './GTMScript'
+export * from './GTMScript';

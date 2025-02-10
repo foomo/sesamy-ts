@@ -1,7 +1,12 @@
-# Sesamy Packages
-
+![npm](https://img.shields.io/npm/dm/@foomo/sesamy.svg?style=flat-square)
+![npm](https://img.shields.io/npm/l/@foomo/sesamy.svg?style=flat-square)
 [![Build Status](https://github.com/foomo/sesamy-ts/actions/workflows/test.yml/badge.svg?branch=main&event=push)](https://github.com/foomo/sesamy-ts/actions/workflows/test.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/foomo/sesamy-ts)](https://goreportcard.com/report/github.com/foomo/sesamy-ts)
+
+<p align="center">
+  <img alt="sesamy" src=".github/assets/sesamy.png"/>
+</p>
+
+# Sesamy Packages
 
 > **Se**rver **S**ide T**a**g **M**anagement **S**ystem
 

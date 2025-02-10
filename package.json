@@ -6,22 +6,24 @@
 		"clean": "turbo run clean",
 		"build": "turbo run build --cache-dir=.turbo",
 		"lint": "biome check ./",
-		"lint:fix": "biome check --apply ./",
+		"lint:fix": "biome check --write ./",
+		"lint:fix:unsafe": "biome check --write --unsafe ./",
 		"test": "turbo run test",
 		"type-check": "turbo type-check",
 		"publish-packages": "turbo run build && changeset publish"
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
-		"@changesets/cli": "latest",
-		"biome": "latest",
-		"turbo": "latest"
+		"@changesets/cli": "2.27.12",
+		"@biomejs/biome": "1.9.4",
+		"turbo": "2.4.0"
 	},
 	"engines": {
-		"node": "20.x"
+		"node": "22.x"
 	},
+	"packageManager": "pnpm@10.2.1",
 	"volta": {
-		"node": "20.17.0",
-		"pnpm": "9.9.0"
+		"node": "22.13.1",
+		"pnpm": "10.2.1"
 	}
 }
